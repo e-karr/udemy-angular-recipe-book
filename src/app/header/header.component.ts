@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,26 +8,4 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent {
   collapsed = true;
 
-  @Output() showRecipies = new EventEmitter<{
-    recipies: boolean;
-    shoppingList: boolean;
-  }>();
-  @Output() showShoppingList = new EventEmitter<{
-    recipies: boolean;
-    shoppingList: boolean;
-  }>();
-
-  handleShowRecipies() {
-    this.showRecipies.emit({
-      recipies: true,
-      shoppingList: false,
-    });
-  }
-
-  handleShowShoppingList() {
-    this.showShoppingList.emit({
-      recipies: false,
-      shoppingList: true,
-    });
-  }
 }

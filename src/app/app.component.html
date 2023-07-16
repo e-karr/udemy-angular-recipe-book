@@ -1,10 +1,9 @@
-<app-header (showRecipies)="onShowRecipies($event)" (showShoppingList)="onShowShoppingList($event)"></app-header>
+<app-header></app-header>
 
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="recipies"></app-recipes>
-      <app-shopping-list *ngIf="shoppingList"></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
