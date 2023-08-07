@@ -5,6 +5,7 @@ import { PlaceholderDirective } from './placeholder/placeholder.directive';
 import { DropdownDirective } from './dropdown.directive';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+// import { LoggingService } from '../logging.service';
 
 @NgModule({
   declarations: [
@@ -22,5 +23,6 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule
   ],
+  // providers: [LoggingService]
 })
 export class SharedModule {}
